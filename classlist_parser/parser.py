@@ -13,7 +13,10 @@ from tkinter import Tk, filedialog, messagebox
 import json
 import pandas as pd
 import pdfplumber
-from settings import SETTINGS
+from settings import load_settings
+
+SETTINGS = load_settings()
+
 
 # CONFIGURATION SETTINGS FOR THIS TOOL.
 # Other departments or colleges can edit these values to customize behavior.
